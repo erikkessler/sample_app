@@ -1,0 +1,12 @@
+require 'spec_helper'
+
+describe "Static pages" do
+  
+  describe "Home page" do
+  
+    it "should have the content 'Sample App'" do
+      vistit '/static_pages/home'
+      page.should have_content('YOLO')
+    end
+  end
+end
